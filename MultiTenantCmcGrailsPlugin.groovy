@@ -1,10 +1,10 @@
-class GrailsMultiTenantCmcGrailsPlugin {
+class MultiTenantCmcGrailsPlugin {
     // the plugin version
     def version = "0.1"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.4 > *"
     // the other plugins this plugin depends on
-    def dependsOn = [:]
+    def dependsOn = [multiTenantCode:"1.0.0-SNAPSHOT]
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
             "grails-app/views/error.gsp"
@@ -19,7 +19,7 @@ Brief description of the plugin.
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://grails.org/plugin/grails-multi-tenant-cmc"
+    def documentation = "http://grails.org/plugin/multi-tenant-cmc"
 
     def doWithWebDescriptor = { xml ->
         // TODO Implement additions to web.xml (optional), this event occurs before 
